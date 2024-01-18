@@ -15,6 +15,9 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IPizzaRepository, PizzaRepository>();
 builder.Services.AddScoped<PizzaService>();
 
+builder.Services.AddSingleton<IIngredientesRepository, IngredientesRepository>();
+builder.Services.AddScoped<IngredienteService>();
+
 
 /* builder.Services.AddScoped<IngredienteService>();
 builder.Services.AddSingleton<IIngredientesRepository, IngredientesRepository>(); */

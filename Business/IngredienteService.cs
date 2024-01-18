@@ -8,9 +8,9 @@ namespace PizzaExample.Business
     public class IngredienteService
     {
 
-        private readonly IngredientesRepository _ingredienteRepository;
+        private readonly IIngredientesRepository _ingredienteRepository;
 
-        public IngredienteService(IngredientesRepository ingredientesRepository){
+        public IngredienteService(IIngredientesRepository ingredientesRepository){
             _ingredienteRepository = ingredientesRepository;
         }
         public  List<Ingrediente> GetAll()
