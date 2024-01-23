@@ -8,14 +8,16 @@ namespace PizzaExample.Data
     public class IngredientesRepository : IIngredientesRepository
     {
         private  List<Ingrediente> Ingredientes { get; set; }
-        private  int nextId = 3;
+        private  int nextId = 5;
 
         public IngredientesRepository()
         {
             Ingredientes = new List<Ingrediente>
             {
-                new Ingrediente { Id = 1, Name = "Pepperoni", Origen = "Animal" },
-                new Ingrediente { Id = 2, Name = "Olivas", Origen = "Vegetal" }
+                new Ingrediente { Id = 1, Nombre = "Pepperoni", Origen = "Animal" },
+                new Ingrediente { Id = 2, Nombre = "Olivas", Origen = "Vegetal" },
+                new Ingrediente { Id = 3, Nombre = "Salchichon", Origen = "Animal" },
+                new Ingrediente { Id = 4, Nombre = "Cebolla", Origen = "Vegetal" }
             };
         }
 

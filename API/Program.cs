@@ -18,6 +18,12 @@ builder.Services.AddScoped<PizzaService>();
 builder.Services.AddSingleton<IIngredientesRepository, IngredientesRepository>();
 builder.Services.AddScoped<IngredienteService>();
 
+builder.Services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<UsuarioService>();
+
+builder.Services.AddSingleton<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<PedidoService>();
+
 
 /* builder.Services.AddScoped<IngredienteService>();
 builder.Services.AddSingleton<IIngredientesRepository, IngredientesRepository>(); */
